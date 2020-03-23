@@ -14,7 +14,7 @@ body > div {
 }
 @media (min-width: 600px) {
     .nav-link {
-        color: $color;
+        color: yellow;
     }
 }
 @media (max-width: 699px) {
