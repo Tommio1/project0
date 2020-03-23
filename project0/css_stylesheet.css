@@ -14,7 +14,7 @@ body > div {
 }
 @media (min-width: 600px) {
     .nav-link {
-        color: yellow;
+        color: $color;
     }
 }
 @media (max-width: 699px) {
@@ -75,7 +75,7 @@ card > card-img-top {
     right: 0.2%;
 }
 table, th, tr, td {
-    border: 0.5px solid $color;
+    border: 0.5px solid blue;
     width: 75%;
     text-align: center;
     color: green;
