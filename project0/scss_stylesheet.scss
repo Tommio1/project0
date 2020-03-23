@@ -1,2 +1,12 @@
 /* SCSS STYLESHEET */
-$color : khaki;
+$a: blue;
+
+.nav-link {
+ color: $a;
+}
+tr {
+    color: pink;
+}
+.card {
+    border-color: red;
+}
