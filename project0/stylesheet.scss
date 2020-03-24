@@ -1,6 +1,6 @@
 $a: red;
 $b: black;
-
+$f: 'Dancing Script', cursive;
 body {
     background-color: black;
 }
@@ -11,7 +11,7 @@ body > div {
     background-color: $b;
 }
 .nav-link {
-    font-family: 'Dancing Script', cursive;
+    font-family: $f;
     font-size: 1.5em; 
 }
 @media (min-width: 600px) {
@@ -33,9 +33,18 @@ body > div {
     height: 450px;
     width: 540px;
 }
+#pnr {
+    position: relative;
+    top: 30%;
+}
 /* CONTAINER */
 [class~=blog] {
-    font-family: 'Dancing Script', cursive;
+    font-family: $f;
+    font-size: 1.5em;
+    left: 5%;
+}
+#investment {
+    font-family: $f;
     font-size: 1.5em;
     left: 5%;
 }
@@ -74,12 +83,48 @@ card > card-img-top {
 }
 /* TABLE */
 #pricelist {
-    right: 0.2%;
+    position: relative;
+    top: 10%;
+    left: 45%;
 }
-table, th, tr, td {
+table {
+    th {
     border: 0.5px solid blue;
-    width: 75%;
+    width: 85%;
     text-align: center;
     color: green;
   }
-
+  tr {
+    border: 0.5px solid blue;
+    width: 85%;
+    text-align: center;
+  }
+  td {
+    border: 0.5px solid blue;
+    width: 85%;
+    text-align: center;
+    color: brown; 
+  }
+}
+%inhf {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 1em;
+    color: blueviolet;
+}
+.first {
+    @extend%inhf; 
+        background-color: black;
+        color: green;
+        justify-content: center;
+}
+.second {
+    @extend%inhf;
+        background-color: black;
+        color: blue;
+}
+.third {
+    @extend%inhf;
+    background-color: black;
+    color: yellow;
+    justify-content: center;
+}
