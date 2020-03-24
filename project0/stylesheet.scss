@@ -1,12 +1,14 @@
-/* CSS STYLESHEET */
+$a: red;
+$b: black;
+
 body {
     background-color: black;
 }
 body > div {
-    color: red;
+    color: $a;
 }
 .jumbotron {
-    background-color: black;
+    background-color: $b;
 }
 .nav-link {
     font-family: 'Dancing Script', cursive;
